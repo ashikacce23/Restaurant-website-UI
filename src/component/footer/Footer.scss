@@ -1,0 +1,54 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  background-color: black;
+  color: white;
+  .footer_section {
+    width: 30%;
+    padding: 0 10px;
+    .title {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      border-bottom: 1px solid lightgray;
+      display: inline-block;
+    }
+    .social {
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        transform: translateX(2px);
+      }
+    }
+    p {
+      line-height: 1.4rem;
+    }
+    .copy {
+      font-family: "Shadows Into Light", cursive;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    }
+  }
+}
+
+@media screen and(max-width:660px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .footer_section {
+      width: 100%;
+      padding: 0;
+      margin-top: 20px;
+
+      .title {
+        border-bottom: none;
+      }
+      p {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}

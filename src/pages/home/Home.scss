@@ -1,0 +1,19 @@
+.home_container {
+  padding-inline: 5rem; //x-axis e padding hobe 5rem
+  padding-block: 3vw; //padding top
+}
+@media only screen and (min-width: 992px) {
+  .home_container {
+    padding-inline: 12rem !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home_container {
+    padding-inline: 12vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home_container {
+    padding-inline: 2vw;
+  }
+}

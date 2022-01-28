@@ -1,0 +1,41 @@
+.about {
+  height: 80vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../../images/img_1.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .info {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translateX(50%, -50%);
+    text-align: center;
+    box-shadow: 0px 3px 6px var(--shadow-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    opacity: 0.8;
+    span {
+      font-family: "Shadows Into Light", cursive;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 1px 4px 10px rgb(95, 88, 88);
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

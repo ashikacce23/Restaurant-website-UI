@@ -1,0 +1,121 @@
+.improve_skill {
+  display: flex;
+  align-items: center;
+  .col1 {
+    width: 50%;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .col2 {
+    padding-left: 1rem;
+    h1 {
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .skill_item {
+      color: var(--text-light);
+      border-left: 3px solid red;
+      margin-bottom: 5px;
+      padding: 2px 0px 2px 5px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(235, 232, 232);
+      }
+    }
+    .btn {
+      font-size: 0.8rem;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 7px 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 3px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 6px var(--shadow-color);
+      transition: 0.5s ease-in-out;
+      &:hover {
+        box-shadow: 0px 1px 3px var(--shadow-color);
+        background-color: rgb(4, 4, 224);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .improve_skill {
+    display: flex;
+    flex-direction: column;
+    .col1 {
+      width: 100%;
+      padding-inline: 2vw;
+      margin-bottom: 10px;
+    }
+    .col2 {
+      width: 100%;
+      text-align: center;
+      .skill_item {
+        font-size: 1rem;
+        display: inline-block;
+        margin-right: 1rem;
+      }
+      .btn {
+        display: block;
+        margin-top: 1rem !important;
+        margin: auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  .improve_skill {
+    width: 100%;
+    .col1 {
+      width: 100%;
+    }
+    .col2 {
+      padding: 5px 10px;
+      h1 {
+        font-size: 1.8rem;
+      }
+      .skill_item {
+        font-size: 1rem;
+      }
+      .btn {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .improve_skill {
+    .col1 {
+      width: 100%;
+    }
+    .col2 {
+      width: 100%;
+      padding: 10px 20px !important;
+      h1 {
+        font-size: 2rem;
+      }
+      .skill_item {
+        font-size: 1.1rem;
+      }
+      .btn {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .improve_skill {
+    .col2 {
+      .skill_item {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

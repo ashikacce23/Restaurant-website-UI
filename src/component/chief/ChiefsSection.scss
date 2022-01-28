@@ -1,0 +1,13 @@
+.chief_section {
+  //   display: flex;
+  //   flex-direction: column;
+  display: block; // amader section ta ekta block element holo
+  h1 {
+    margin: 20px 0;
+  }
+  .top_cheif_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 1rem;
+  }
+}

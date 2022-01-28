@@ -1,0 +1,75 @@
+.chief_card {
+  display: flex;
+  img {
+    width: 50%; // ei width diye column ke vag korlam.
+    max-height: 120px;
+    max-width: 120px;
+    border-radius: 3px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  .chief_card_info {
+    width: 50%; // ei width diye column ke vag korlam.
+    background-color: rgb(248, 246, 246);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    .chief_card_name {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    .chief_recipe-count {
+      color: rgb(65, 62, 62);
+    }
+    .chief_recipe-cuisine {
+      color: rgb(65, 62, 62);
+    }
+    .chief_icon {
+      display: flex;
+      svg {
+        margin-right: 15px;
+      }
+      .fb {
+        color: green;
+        cursor: pointer;
+        transition: all 0.5s;
+        transform: scale(1);
+        &:hover {
+          transform: scale(1.3);
+          color: rgb(166, 255, 0);
+        }
+      }
+      .tr {
+        color: blue;
+        cursor: pointer;
+        transition: all 0.5s;
+        transform: scale(1);
+        &:hover {
+          transform: scale(1.3);
+          color: rgb(132, 0, 255);
+        }
+      }
+      .in {
+        color: brown;
+        cursor: pointer;
+        transition: all 0.5s;
+        transform: scale(1);
+        &:hover {
+          transform: scale(1.3);
+          color: rgb(255, 123, 0);
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:550px) {
+  .chief_card {
+    box-shadow: 4px 4px 5px 0px rgba(10, 9, 9, 0.75);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(10, 9, 9, 0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(10, 9, 9, 0.75);
+    .chief_card_info {
+      padding: 5px 0;
+    }
+  }
+}

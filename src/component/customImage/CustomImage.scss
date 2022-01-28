@@ -1,0 +1,22 @@
+//NB: grid system ta Hero.js e kora ase,
+//Cz, oita parent div.
+
+.custom_image {
+  background-color: red;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  //padding-top: 80%;
+  //padding ke amra props er maddhome pass korbo
+  position: relative;
+  border-radius: 3px;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+  }
+}

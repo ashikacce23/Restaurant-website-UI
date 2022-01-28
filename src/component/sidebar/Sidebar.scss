@@ -1,0 +1,57 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100vh;
+  width: 250px;
+  background-color: var(--background-color);
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2), 3px 0 5px var(--shadow-color);
+
+  .sidebar-link {
+    display: flex;
+    // flex-direction: column;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-light);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.8s;
+    position: relative;
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 2px; //content er height, eta niche border hisebe kaj korbe.
+      width: 50%;
+      background-color: var(--primary-color);
+      //ebar positon kore border ke niche anbo
+      position: absolute;
+      left: 15px;
+      bottom: -1px;
+      transform: scale(0);
+      transition: transform 0.3s;
+    }
+    //jehetu link (a) ke amra active korbo, tai (a) er vitore &.active name class nilam.ata pore use korbo
+    &.active {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+    &:hover {
+      background-color: rgb(231, 229, 229);
+      &::before {
+        transform: scale(1);
+      }
+    }
+    //ei svg holo icon gular name.
+    svg {
+      margin-right: 5px;
+    }
+  } //end navbar-links here
+}
+@media screen and (min-width: 701px) {
+  .sidebar {
+    display: none;
+  }
+}
